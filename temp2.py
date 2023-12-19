@@ -36,5 +36,5 @@ def check():
             login, password = line.strip().split(":")
             lst.append((login, password))
     new_list = [item for sublist in lst for item in sublist]
-    print(new_list)
+    print(new_list)  
 check()

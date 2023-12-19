@@ -1,3 +1,5 @@
+# from temp2 import lst
+
 # with open('user.txt', 'w', encoding='utf-8') as file:
 #     file.write('login:password')
 

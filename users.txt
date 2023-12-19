@@ -1,2 +1,1 @@
-timur:alemasov
-dmitri:ilich
+andrey:tereshin
