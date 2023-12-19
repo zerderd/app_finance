@@ -58,3 +58,19 @@ if auth == True:
     print(registr_pas())
 else:
     print('...')
+
+
+
+while True:
+    pr = input('''Добро пожаловать! Выберите пункт меню:
+               1. Регистрация
+               2. Авторизация
+                3. Выход''')
+    user_input = input()
+    if user_input == '1':
+        print('Зарегистрируйся')
+    elif user_input == '2':
+        print('Авторизируйся')
+    elif user_input == '3':
+        print('Завершение работы')
+        break
