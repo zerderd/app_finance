@@ -16,6 +16,26 @@
 #     password = input('Введите пароль: ')
 #     file.write(login +':'+password+'\n')
 
+
+def menu():
+    while True:
+        pr = input('''Добро пожаловать! Выберите пункт меню:
+        1. Регистрация
+        2. Авторизация
+        3. Выход\n''')
+        if pr == '1':
+            print('Зарегистрируйтесь')
+            registr_pas()
+        elif pr == '2':
+            print('Авторизуйтесь')
+            if auth():
+                break
+        elif pr == '3':
+            print('Завершение работы')
+            break
+        else:
+            print('Некорректный ввод. Пожалуйста, выберите пункт меню.')
+
 def auth():
     login = input('Введите логин: ')
     password = input('Введите пароль: ')
@@ -58,19 +78,4 @@ if auth == True:
     print(registr_pas())
 else:
     print('...')
-
-
-
-while True:
-    pr = input('''Добро пожаловать! Выберите пункт меню:
-               1. Регистрация
-               2. Авторизация
-                3. Выход''')
-    user_input = input()
-    if user_input == '1':
-        print('Зарегистрируйся')
-    elif user_input == '2':
-        print('Авторизируйся')
-    elif user_input == '3':
-        print('Завершение работы')
-        break
+menu()
